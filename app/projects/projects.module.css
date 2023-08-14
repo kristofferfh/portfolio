@@ -1,0 +1,34 @@
+#blog {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 2em;
+ width: 100%;
+ padding: 2em 1em;
+}
+
+#blog div:nth-child(even) {
+ transform:rotate(4deg);
+ position:relative;
+ top:5px;
+}
+
+#blog div:nth-child(3n) {
+ transform:rotate(-3deg);
+ position:relative;
+ top:-5px;
+}
+
+#blog div:nth-child(5n) {
+ transform:rotate(5deg);
+ position:relative;
+ top:-10px;
+}
+
+#blog div:hover,
+#blog div:focus{
+ box-shadow:10px 10px 7px rgba(0,0,0,.7);
+ transform: scale(1.25);
+ position:relative;
+ z-index:1;
+}

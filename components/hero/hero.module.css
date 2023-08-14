@@ -1,0 +1,17 @@
+.hero {
+ display: flex;
+ justify-content: flex-end;
+ flex-flow: column wrap;
+ width: 100%;
+ height: 50vh;
+ padding: 5em;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ color:white;
+}
+
+.code {
+ color:var(--clr-yellow); 
+ margin-right: 1rem;
+}

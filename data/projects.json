@@ -1,0 +1,81 @@
+[
+ {
+  "id": 1,
+  "title":"My first portfolio",
+  "link": {
+   "repo": "https://github.com/kristofferfh/kodehode",
+   "live": "https://kristofferfh.github.io/kodehode/"
+  },
+  "img":"first-portifolio.png",
+  "desc": {
+   "short": "My first portfolio, created without any frameworks or imports",
+   "long": ""
+  },
+  "tags": ["vanilla js", "html", "css"]
+ },{
+  "id": 2,
+  "title":"frontendmentor.io calculator",
+  "link": {
+   "repo": "https://github.com/kristofferfh/my-first-nextjs-project",
+   "live": "https://my-first-nextjs-project-iota.vercel.app/calculator"
+  },
+  "img":"frontendmentorCalculatorApp.png",
+  "desc": {
+   "short": "Frontendmentor.io challenge to recreate a calculator application in react",
+   "long": ""
+  },
+  "tags": ["frontendmentor", "react", "js", "css"]
+ },{
+  "id": 3,
+  "title":"Working with API, it's a promise!",
+  "link": {
+   "repo": "https://github.com/kristofferfh/my-first-react-project",
+   "live": "https://kristofferfh.github.io/my-first-react-project/dist/"
+  },
+  "img":"learningReact.png",
+  "desc": {
+   "short": "I've been learning how to work around API and how to utilize it's many features",
+   "long": ""
+  },
+  "tags": ["React", "API"]
+ },{
+  "id": 4,
+  "title":"I choose you, Go Pokedex!",
+  "link": {
+   "repo": "https://github.com/kristofferfh/classwork/tree/main/javascriptAdvanced/assignments/230601pokedex",
+   "live": "https://kristofferfh.github.io/classwork/javascriptAdvanced/assignments/230601pokedex/"
+  },
+  "img":"pokedex.png",
+  "desc": {
+   "short": "An assignment to use the public api www.pokeapi.co to create an pokedex",
+   "long": ""
+  },
+  "tags": ["JS", "HTML", "CSS", "API", "Localstorage"]
+ },{
+  "id": 5,
+  "title":"Drumkit, time to hit it!",
+  "link": {
+   "repo": "https://github.com/kristofferfh/classwork/tree/main/javascriptAdvanced/assignments/230509drumkit",
+   "live": "https://kristofferfh.github.io/classwork/javascriptAdvanced/assignments/230509drumkit/index.htm"
+  },
+  "img":"drumkit.png",
+  "desc": {
+   "short": "Homework assignment to create a playable drumkit with eventlisteners",
+   "long": ""
+  },
+  "tags": ["JS", "HTML", "CSS", "Eventlistener"]
+ },{
+  "id": 6,
+  "title":"My own streaming service provider",
+  "link": {
+   "repo": "",
+   "live": ""
+  },
+  "img":"streamingServiceMockup.jpeg",
+  "desc": {
+   "short": "Mockup for a better UX when it comes to filtering movings/series",
+   "long": ""
+  },
+  "tags": ["JS", "CSS", "HTML"]
+ }
+]

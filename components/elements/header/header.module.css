@@ -1,0 +1,32 @@
+.header {
+ position: fixed;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 100%;
+ padding: 0 1em;
+ background-color: var(--clr-bg);
+ z-index: 2;
+ backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#logo {
+ height: 100%;
+}
+
+#logo img {
+ height: 5em;
+ width: 5em;
+}
+
+.navigation {
+ font-size: 34px;
+ display: flex;
+}
+
+.navigation a {
+ text-transform: capitalize;
+ text-decoration: none;
+ margin-left: 1em;
+}

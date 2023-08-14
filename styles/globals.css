@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+  /* sizes */
+  --width-max: 1280px;
+  --width-min: 375px;
+ /* background */
+ --clr-bg: #fff;
+
+ /* Colors */
+ --clr-darkblue: #264653;
+ --clr-emerald: #2a9d8f;
+ --clr-yellow: #e9c46a;
+ --clr-orange: #f4a261;
+ --clr-red: #e76f51;
+
+ /* font */
+ --fnt-clr: #333;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ min-height: 100vh;
+ background-color: var(--clr-bg);
+ color: var(--fnt-clr);
+ font-family: 'Poppins', sans-serif;
+}
+
+/* main min-height 100vh is stupid, use flex 1 instead */
+main {
+ width: 100%;
+ padding-top: 5em;
+ flex:1;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* Hide main scrollbar for IE, Edge and Firefox until i can get firefox scrollbar styled again */
+html {
+ --line-color: whitesmoke;
+ -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
+ }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+ html::-webkit-scrollbar {
+   display: none;
+ }

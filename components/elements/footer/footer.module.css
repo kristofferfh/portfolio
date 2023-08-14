@@ -1,0 +1,40 @@
+.footer {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: center;
+ height: 500px;
+ aspect-ratio: 960/300;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ color: white;
+}
+
+.section {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ margin-bottom: 2em;
+}
+.section span {
+ width: 2px;
+ height: 100%;
+ background-color: white;
+ margin: 0 1em;
+}
+
+.section div {
+ width: 40%;
+}
+
+.socials {
+ display: flex;
+ justify-content: flex-end;
+ width: 100%;
+}
+
+.socials a {
+ margin: 0 1em;
+}

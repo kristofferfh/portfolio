@@ -1,0 +1,80 @@
+[
+ {
+  "id": 1,
+  "title": "Started my journey",
+  "date": "March 2023",
+  "location": "Bergen",
+  "icon": "school",
+  "description": "Started studing webdevelopment at Kodehode where I quickly discovered a passion for programming",
+  "tags": [
+   "Webdevelopment", "Course", "studying"
+  ]
+ },{
+  "id": 2,
+  "title": "Introduction to web-development",
+  "date": "March 2023",
+  "location": "Bergen",
+  "icon": "code",
+  "description": "We've been studying basic html and css for this first part of the course and I've made huge strides in understanding the languages and its concepts",
+  "tags": [
+   "CSS", "HTML"
+  ]
+ },{
+  "id": 3,
+  "title": "Javascript",
+  "date": "April 2023",
+  "location": "Bergen",
+  "icon": "code",
+  "description": "I've advanced past the basics and will now finally start working with js to create more responsive and useful projects",
+  "list": [
+   "Started working on challenges from frontendmentor.io",
+   "First draft of portfolio is coming along nicely"
+  ],
+  "tags": [
+   "JS"
+  ]
+ },{
+  "id": 4,
+  "title": "Front-end development",
+  "date": "May 2023",
+  "location": "Bergen",
+  "icon": "code",
+  "description": "With more basic knowledge I've moved on to working with frameworks and creating more complex websites",
+  "list": [
+   "I've started working with node and react",
+   "Successfully completed 2 more frontend-mentor challenges"
+  ],
+  "tags": [
+   "React", "Node"
+  ]
+ },{
+  "id": 5,
+  "title": "React vs NextJS",
+  "date": "June 2023",
+  "location": "Bergen",
+  "icon": "code",
+  "description": "By now I'm mostly working in React, but I'm looking forward to the next step where we'll work with NextJS and typescript. While it does seem a bit daunting it's also really exciting",
+  "list": [
+   "I'm looking into recreating my portfolio in NextJS",
+   "Successfully completed Calculator app challenge from frontendmentor"
+  ],
+  "tags": [
+   "React", "NextJS"
+  ]
+ },{
+  "id": 5,
+  "title": "Back-end developer, a turning point",
+  "date": "August 2023",
+  "location": "Bergen",
+  "icon": "code",
+  "description": "We've had to decide on our future path as developers here at Kodehode and I've made the choice to focus on back-end development. While I do wish to become a full-stack developer, I feel the focus offered in this path will lead me to become a better programmer in the future",
+  "list": [
+   "Version 1.0 of my portifolio is now live, and you're looking at it!",
+   "I've started working with a lot more interesting projects that demand a lot more knowledge, and I'm loving it!",
+   "Created my first server in node, also got the chance to work with express"
+  ],
+  "tags": [
+   "Node", "NextJS", "Express"
+  ]
+ }
+]
