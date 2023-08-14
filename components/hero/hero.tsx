@@ -15,8 +15,8 @@ export const Hero = () => {
       initial={{opacity:0, x:50}}
       animate={{opacity:1, x:0}}
       transition={{duration:1}}>
-    <h1><span className={styles.code}>&lt;Hello World!&gt;</span> I'm Kristoffer</h1>
-    <p>I'm currently studying webdevelopment @kodehode</p>
+    <h1><span className={styles.code}>&lt;Hello World!&gt;</span> I&apos;m Kristoffer</h1>
+    <p>I&apos;m currently studying webdevelopment @kodehode</p>
    </motion.div>
   </section>
  )
