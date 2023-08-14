@@ -9,10 +9,23 @@ import DataObjectIcon from '@mui/icons-material/DataObject';
 
 // https://stephane-monnot.github.io/react-vertical-timeline/
 
-const TimelineCard = ({ obj }) => {
-  const icon = obj.icon === "school" 
+type TimelineCardProps = {
+  props: {
+    id: number
+    title: string
+    date: string
+    location: string
+    icon: string
+    description: string
+    list?: string[]
+    tags?: string[]
+  }
+}
+
+const TimelineCard = ({ props }: TimelineCardProps) => {
+  const icon = props.icon === "school" 
   ? <SchoolIcon /> 
-  : obj.icon === "code"
+  : props.icon === "code"
   ? <DataObjectIcon/>
   : "ok"
 
@@ -21,20 +34,20 @@ const TimelineCard = ({ obj }) => {
       className="vertical-timeline-element--work"
       contentStyle={{background: "whitesmoke", color: "#000"}}
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-      date={obj.date}
+      date={props.date}
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       icon={icon}
     >
-      <h2 className="vertical-timeline-element-title">{obj.title}</h2>
+      <h2 className="vertical-timeline-element-title">{props.title}</h2>
       {/* <h3 className="vertical-timeline-element-subtitle">{obj.location}</h3> */}
-      <p>{obj.description}</p>
+      <p>{props.description}</p>
       <ul className={styles.timeline_ul}>
-        {obj.list && obj.list.map((item)=>(
+        {props.list && props.list.map((item)=>(
           <li key={item}>{item}</li>
         ))}
       </ul>
       <span className={styles.tags}>
-        {obj.tags && obj.tags.map((item)=>(
+        {props.tags && props.tags.map((item)=>(
           <a key={item}>{item}</a>
         ))}
       </span>
@@ -50,10 +63,10 @@ export const TimelineElement = () => {
   <section className={styles.timeline}>
     <h1>My progress studying web development</h1>
     <VerticalTimeline lineColor="">
-      {data.reverse().map((item)=>(
+      {data.reverse().map((obj)=>(
         <TimelineCard
-          key={item.id} 
-          obj={item}/>
+          key={obj.id} 
+          props={obj}/>
       ))}
     </VerticalTimeline>  
   </section>

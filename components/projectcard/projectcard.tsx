@@ -5,7 +5,24 @@ import {motion} from "framer-motion"
 
 // todo, hover show link: repo + live
 
-export const ProjectCard = ({props}) => {
+type ProjectCardProps = {
+  props: {
+    id: number
+    title: string
+    link: {
+      repo: string
+      live: string
+    }
+    desc: {
+      short: string
+      long: string
+    }
+    img: string
+    tags: string[]
+  }
+}
+
+export const ProjectCard = ({props}:ProjectCardProps) => {
  return (
   <motion.div 
   className={styles.projectcard}
