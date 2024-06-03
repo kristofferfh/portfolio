@@ -1,75 +1,18 @@
-# Nuxt 3 Minimal Starter
+# My little portifolio
+Hi, my name is Kristoffer
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Versions
+I'm including a preview of my old portifolio creations that I've made over the years.
+## v3 Nuxt3 (2024Q2)
+After having to use vue and nuxt for multiple projects it's come to be one of my favorite front-end frameworks for creating websites.
 
-## Setup
+## v2 NextJS 11 (2023Q3)
+This itteration was done a few weeks later after learning more about react and next. I had started looking into typescript at this point.
 
-Make sure to install the dependencies:
+<img src="versions/v2/index.png" height="200" width="200" alt="v2 index page"/>
+<img src="versions/v2/projects.png" height="200" width="200" alt="v2 projects page" />
 
-```bash
-# npm
-npm install
+## v1 Basic html/js (2023Q2)
+This was the first portifolio I created after studying front-end at kodehode, at this time we had only gone trough html, css and javascript.
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<img src="versions/v1/index.png" height="200" width="200" alt="v1 index page"/>
