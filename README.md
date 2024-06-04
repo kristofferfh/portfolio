@@ -1,6 +1,7 @@
-# My little portifolio
+# My little portfolio
 Hi, my name is Kristoffer
-
+# Project updates
+test
 # Versions
 I'm including a preview of my old portifolio creations that I've made over the years.
 ## v3 Nuxt3 (2024Q2)
