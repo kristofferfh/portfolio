@@ -1,0 +1,19 @@
+:root {
+  --color-bg-dark: #1d1d1d;
+  --color-bg-light: #fff;
+
+  --color-txt-dark: #1d1d1d;
+  --color-txt-light: #fff;
+}
+
+:root {
+  --bg-primary: var(--color-bg-light);
+  --txt-primary: var(--color-txt-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: var(--color-bg-dark);
+    --txt-primary: var(--color-txt-light);
+  }
+}
