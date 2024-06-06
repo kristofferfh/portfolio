@@ -11,8 +11,6 @@
 
   ]
 
-
-
   const nextMessage = () => {
     // Reset
     if (count.value >= messageList.length) count.value = 0
@@ -64,7 +62,6 @@
     place-items: center;
 
     height: 100svh;
-    backdrop-filter: blur(10px) brightness(40%);
   }
 
   .message {
@@ -73,7 +70,7 @@
     grid-template-columns: 1fr 1fr;
 
     font-size: 4rem;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
 
     color: whitesmoke;
   }
