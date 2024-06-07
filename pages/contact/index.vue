@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <h1>My projects!</h1>
+    <h1>Contact me!</h1>
   </div>
 </template>
 
