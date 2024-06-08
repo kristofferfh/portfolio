@@ -10,7 +10,10 @@
 </template>
 
 <style scoped>
-  #header-button {
+  span {
     padding: 2rem;
+    background-color: var(--bg-primary);
+    border: 1px solid gray;
+    border-radius: 50%;
   }
 </style>
