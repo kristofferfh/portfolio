@@ -8,7 +8,7 @@
 <template>
   <header :class="{'nav-open': isOpen}">
     <Transition :name="isOpen ? 'btn' : 'nav'" mode="out-in">
-      <HeaderNav v-if="isOpen" @mouseleave="isOpen = false"/>
+      <HeaderNav v-if="isOpen" @mouseout="isOpen = false"/>
       <HeaderButton v-else @mouseenter="isOpen = true" />
     </Transition>
   </header>
