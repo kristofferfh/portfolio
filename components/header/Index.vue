@@ -6,11 +6,11 @@
 </script>
 
 <template>
-  <header :class="{'nav-open': isOpen}" @mouseout.stop="isOpen = false">
+  <header :class="{'nav-open': isOpen}">
     <Transition :name="isOpen ? 'btn' : 'nav'" mode="out-in">
-      <HeaderNav v-if="isOpen"/>
+      <HeaderNav v-if="isOpen" @mouseleave="isOpen = false"/>
+      <HeaderButton v-else @mouseenter="isOpen = true" />
     </Transition>
-    <HeaderButton :isOpen="isOpen" @click="isOpen = !isOpen" @mouseenter="isOpen = !isOpen" />
   </header>
 </template>
 
@@ -21,8 +21,6 @@
     top: 1rem;
     right: 1rem;
     max-width: auto;
-
-    background-color: red;
 
     z-index: 10;
     overflow: hidden;
