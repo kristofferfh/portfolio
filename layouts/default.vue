@@ -5,7 +5,6 @@
       <slot />
     </main>
     <Footer />
-    <Particles />
   </div>
 </template>
 
@@ -19,6 +18,5 @@
 
   main {
     flex: 1;
-    backdrop-filter: blur(50px) brightness(40%);
   }
 </style>
