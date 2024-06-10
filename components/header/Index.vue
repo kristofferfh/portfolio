@@ -16,37 +16,8 @@
 
 <style scoped>
   header {
-    display: flex;
     position: fixed;
-    top: 1rem;
-    right: 1rem;
-    max-width: auto;
-
-    background-color: red;
-
-    z-index: 10;
-    overflow: hidden;
-  }
-
-  /* Navigation transition */
-  .nav-enter-active,
-  .nav-leave-active {
-    transition: all 1s ease-in-out;
-  }
-
-  .nav-enter-from,
-  .nav-leave-to {
-    opacity: 0;
-  }
-
-  /* Button transition */
-  .btn-enter-active,
-  .btn-leave-active {
-    transition: all 0.1s ease-in-out;
-  }
-
-  .btn-enter-from,
-  .btn-leave-to {
-    opacity: 0;
+    top: 2rem;
+    right: 2rem;
   }
 </style>
