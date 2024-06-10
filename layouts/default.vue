@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <Header />
-    <main>
-      <slot />
-    </main>
-    <Footer />
-  </div>
+  <main>
+    <slot />
+  </main>
+  <Footer />
+  <Header />
 </template>
 
 <style scoped>
