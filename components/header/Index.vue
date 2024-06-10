@@ -1,52 +1,52 @@
 <script setup lang="ts">
-  const isOpen = ref(true)
+  // Convert css transition to func instead or use media queuery to find size of
+  // nav el to scale border-radius better.
 
-  // The plan here is to have the header element expand rtl on hover with an effect that exands slowly
-  // Another important thing is to make sure the border goes from buttons circle shape to nav bars rect shape
+  const isOpen = ref(true)
 </script>
 
 <template>
-  <header :class="{'nav-open': isOpen}" @mouseout.stop="isOpen = false">
-    <Transition :name="isOpen ? 'btn' : 'nav'" mode="out-in">
-      <HeaderNav v-if="isOpen"/>
+  <header
+    @mouseenter="isOpen = true"
+    @mouseleave="isOpen = false"
+    :class="{'opened': isOpen}"
+  >
+    <Transition>
+      <HeaderNav v-if="isOpen" />
     </Transition>
-    <HeaderButton :isOpen="isOpen" @click="isOpen = !isOpen" @mouseenter="isOpen = !isOpen" />
+    <HeaderButton @click="isOpen = !isOpen" :isOpen="isOpen"/>
   </header>
 </template>
 
 <style scoped>
   header {
     display: flex;
+    justify-content: end;
     position: fixed;
-    top: 1rem;
-    right: 1rem;
-    max-width: auto;
+    top: 2rem;
+    right: 2rem;
 
-    background-color: red;
+    color: var(--txt-header);
+    background-color: var(--bg-primary);
+    border: 2px solid #4d4d4d;
+    border-radius: 50%;
 
-    z-index: 10;
-    overflow: hidden;
+    transition: border-radius 1200ms cubic-bezier(1,0,.9,.3);
   }
 
-  /* Navigation transition */
-  .nav-enter-active,
-  .nav-leave-active {
+  .opened {
+    transition: border-radius 100ms ease-out;
+    border-radius: 10px;
+  }
+
+  /* we will explain what these classes do next! */
+  .v-enter-active,
+  .v-leave-active {
     transition: all 1s ease-in-out;
   }
 
-  .nav-enter-from,
-  .nav-leave-to {
-    opacity: 0;
-  }
-
-  /* Button transition */
-  .btn-enter-active,
-  .btn-leave-active {
-    transition: all 0.1s ease-in-out;
-  }
-
-  .btn-enter-from,
-  .btn-leave-to {
-    opacity: 0;
+  .v-enter-from,
+  .v-leave-to {
+    max-width: 0;
   }
 </style>

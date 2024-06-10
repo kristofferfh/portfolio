@@ -4,11 +4,13 @@
 
   --color-txt-dark: #1d1d1d;
   --color-txt-light: #fff;
+  --color-txt-greylight: #d1d1d1;
 }
 
 :root {
   --bg-primary: var(--color-bg-light);
   --txt-primary: var(--color-txt-dark);
+  --txt-header: var(--color-txt-greylight)
 }
 
 @media (prefers-color-scheme: dark) {
