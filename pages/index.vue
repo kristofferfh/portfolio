@@ -54,14 +54,16 @@
       </span>
     </div>
   </div>
+  <Particles />
 </template>
 
 <style scoped>
   #hero {
     display: grid;
     place-items: center;
-
     height: 100svh;
+
+    backdrop-filter: blur(50px) brightness(40%);
   }
 
   .message {
