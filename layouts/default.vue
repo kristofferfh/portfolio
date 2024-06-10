@@ -1,12 +1,9 @@
 <template>
-  <div>
-    <Header />
-    <main>
-      <slot />
-    </main>
-    <Footer />
-    <Particles />
-  </div>
+  <main>
+    <slot />
+  </main>
+  <Footer />
+  <Header />
 </template>
 
 <style scoped>
@@ -19,6 +16,5 @@
 
   main {
     flex: 1;
-    backdrop-filter: blur(50px) brightness(40%);
   }
 </style>
