@@ -33,7 +33,7 @@
 </script>
 
 <template>
-  <div id="hero">
+  <section id="hero">
     <div class="message">
       <span style="font-size: 10rem; color: lightskyblue; justify-self: end;">
         Hi!
@@ -54,7 +54,7 @@
       </span>
     </div>
     <Particles />
-  </div>
+  </section>
 </template>
 
 <style scoped>

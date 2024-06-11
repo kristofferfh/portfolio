@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div>
+  <section>
     <h1>Contact me!</h1>
-  </div>
+  </section>
 </template>
 
 <style scoped>

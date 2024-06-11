@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div>
+  <section>
     <h1>My projects!</h1>
-  </div>
+  </section>
 </template>
 
 <style scoped>
