@@ -7,6 +7,8 @@ I'm including a preview of my old portifolio creations that I've made over the y
 ## v3 Nuxt3 (2024Q2)
 After having to use vue and nuxt for multiple projects it's come to be one of my favorite front-end frameworks for creating websites.
 
+<img src="versions/v3/hero.png" height="200" width="200" alt="v3 hero"/>
+
 ## v2 NextJS 11 (2023Q3)
 This itteration was done a few weeks later after learning more about react and next. I had started looking into typescript at this point.
 
