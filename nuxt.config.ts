@@ -4,5 +4,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'default' }
   },
   css: ['~/assets/css/main.css'],
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  image: { dir: 'assets/img' },
+  modules: ["@nuxt/image"]
 })
