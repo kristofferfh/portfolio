@@ -3,9 +3,11 @@
     "name": "Project 1",
     "img": [
       {
+        "name": "Image 1 title",
         "src": "placeholder.jpg",
         "desc": "Image describtion of image 1"
       },{
+        "name": "Image 2 title",
         "src": "placeholder.jpg",
         "desc": "Image describtion of image 2"
       }
@@ -16,6 +18,7 @@
     "name": "Project 2",
     "img": [
       {
+        "name": "Image 1 title",
         "src": "placeholder.jpg",
         "desc": "Image describtion of image 1"
       }
