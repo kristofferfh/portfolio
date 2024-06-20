@@ -16,15 +16,17 @@
 </script>
 
 <template>
-  <div>
+  <div class="project-item">
     <h1>{{ name }}</h1>
-    <div v-for="image in img">
-      <span>
+    <div class="project-item-img">
+      <span v-for="image in img">
         <h3>{{ image.name }}</h3>
-        <NuxtImg :src="`~/assets/img/project/${image.src}`" />
+        <NuxtImg :src="`project/${image.src}`" />
         <p>{{ image.desc }}</p>
       </span>
     </div>
+    <p>{{ desc }}</p>
+    <NuxtLink :to="src">Visit</NuxtLink>
   </div>
 </template>
 
