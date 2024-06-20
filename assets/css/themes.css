@@ -1,21 +1,29 @@
 :root {
-  --color-bg-dark: #1d1d1d;
-  --color-bg-light: #fff;
+  --color-bg-dark-100: #1d1d1d;
+  --color-bg-dark-200: #272727;
+  --color-bg-light-100: #fff;
+  --color-bg-light-200: #ececec;
 
   --color-txt-dark: #1d1d1d;
   --color-txt-light: #fff;
   --color-txt-greylight: #d1d1d1;
+
+  --gradient-dark-blue: linear-gradient(90deg, hsla(0, 0%, 11%, 1) 0%, hsla(232, 32%, 23%, 1) 100%);
 }
 
 :root {
-  --bg-primary: var(--color-bg-light);
+  --bg-primary: var(--color-bg-light-100);
+  --bg-secondary: var(--color-bg-light-200);
   --txt-primary: var(--color-txt-dark);
-  --txt-header: var(--color-txt-greylight)
+  --txt-header: var(--color-txt-dark);
+  --bg-grad: var(--gradient-dark-blue);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-primary: var(--color-bg-dark);
+    --bg-primary: var(--color-bg-dark-100);
+    --bg-secondary: var(--color-bg-dark-200);
     --txt-primary: var(--color-txt-light);
+    --txt-header: var(--color-txt-greylight);
   }
 }
