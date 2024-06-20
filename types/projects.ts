@@ -5,7 +5,7 @@ interface ProjectImg {
 }
 
 export interface Project {
-  name: boolean
+  name: string
   img: ProjectImg[]
   desc: string
   src: string
