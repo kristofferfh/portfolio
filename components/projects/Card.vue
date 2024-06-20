@@ -21,7 +21,7 @@
     <div class="project-item-img">
       <span v-for="image in img">
         <h3>{{ image.name }}</h3>
-        <NuxtImg :src="`project/${image.src}`" />
+        <NuxtImg :src="`projects/${image.src}`" />
         <p>{{ image.desc }}</p>
       </span>
     </div>
@@ -31,5 +31,13 @@
 </template>
 
 <style scoped>
-
+  .project-item {
+    background: var(--bg-grad);
+  }
+  .project-item-img {
+    width: clamp(200px, 100%, 768px);
+  }
+ .project-item-img img {
+    width: 100%;
+  }
 </style>
