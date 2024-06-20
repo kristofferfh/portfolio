@@ -10,12 +10,14 @@
     images: Image[]
   }
 
-
+  // Split file
+  // create subcomponen
+  // pass translateX and rotate?
 </script>
 
 <template>
   <div>
-    <span v-for="item in images" style="">
+    <span v-for="item in images">
       <LazyNuxtImg :src="`projects/${item.src}`"/>
       <h3>{{ item.name }}</h3>
       <p>{{ item.desc }}</p>

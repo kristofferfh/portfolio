@@ -13,6 +13,10 @@
   }
 
   const props = defineProps<Project>()
+
+
+
+  // Assign hover effect to tittle and desc, maybe hide entiery until hover?
 </script>
 
 <template>
