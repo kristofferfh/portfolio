@@ -5,6 +5,6 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
-  image: { dir: 'assets/images' },
+  image: { dir: 'assets/img' },
   modules: ["@nuxt/image"]
 })
