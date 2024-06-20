@@ -25,3 +25,6 @@ logs
 
 # Folder specific
 assets/font/*.zip
+
+# Privacy concerns
+assets/img/projects/placeholder.jpg
