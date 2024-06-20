@@ -1,10 +1,21 @@
 <script setup lang="ts">
+  import PROJECTS from "~/data/projects.json"
+  import type { Project } from "~/types/projects";
 
+  const projectsList = ref<Project[]>([])
+
+  onMounted(() => {
+    Object.assign(projectsList.value, PROJECTS)
+
+    console.log(projectsList.value)
+  })
 </script>
 
 <template>
   <section>
-    <h1>My projects!</h1>
+    <template v-for="project in projectsList">
+      <LazyProjectsCard v-bind="project"/>
+    </template>
   </section>
 </template>
 
