@@ -1,10 +1,20 @@
 [
   {
-    "name": "",
+    "name": "Project 1",
     "img": [
       {
-        "src": "url",
-        "desc": "Image describtion"
+        "src": "placeholder.jpg",
+        "desc": "Image describtion of image 1"
+      }
+    ],
+    "desc": "Project describtion",
+    "src": "external url"
+  },{
+    "name": "Project 2",
+    "img": [
+      {
+        "src": "placeholder.jpg",
+        "desc": "Image describtion of image 1"
       }
     ],
     "desc": "Project describtion",
