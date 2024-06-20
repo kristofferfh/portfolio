@@ -6,8 +6,6 @@
 
   onMounted(() => {
     Object.assign(projectsList.value, PROJECTS)
-
-    console.log(projectsList.value)
   })
 </script>
 
