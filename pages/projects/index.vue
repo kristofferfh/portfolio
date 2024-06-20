@@ -18,5 +18,10 @@
 </template>
 
 <style scoped>
-
+  section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+  }
 </style>
