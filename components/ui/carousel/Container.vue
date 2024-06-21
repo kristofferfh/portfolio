@@ -9,12 +9,13 @@
 
   interface Props {
     images: Image[]
+    active: boolean
   }
 </script>
 
 <template>
   <div>
-    <LazyUiCarouselImage v-for="item in images" v-bind="item" />
+    <LazyUiCarouselImage v-for="item in props.images" v-bind="item" :state="props.active" />
   </div>
 </template>
 
