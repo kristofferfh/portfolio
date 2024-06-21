@@ -11,9 +11,7 @@
 
 <template>
   <section>
-    <template v-for="project in projectsList">
-      <LazyProjectsCard v-bind="project"/>
-    </template>
+    <UiCardsProject v-for="project in projectsList" v-bind="project" />
   </section>
 </template>
 
