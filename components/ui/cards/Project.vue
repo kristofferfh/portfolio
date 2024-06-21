@@ -14,14 +14,12 @@
 
   const props = defineProps<Project>()
 
-
-
   // Assign hover effect to tittle and desc, maybe hide entiery until hover?
 </script>
 
 <template>
   <div class="project-item">
-    <ProjectsImageCarousel :images="img"/>
+    <UiCarouselContainer :images="img"/>
     <h1>{{ name }}</h1>
     <div class="project-desc">
       <p>{{ desc }} </p>
