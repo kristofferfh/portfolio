@@ -1,4 +1,7 @@
 <script setup lang="ts">
+  const props = defineProps<Project>()
+  const isHovering = ref(false)
+
   interface ProjectImg {
     name: string
     src: string
@@ -12,19 +15,20 @@
     src: string
   }
 
-  const props = defineProps<Project>()
-
-  // Assign hover effect to tittle and desc, maybe hide entiery until hover?
 </script>
 
 <template>
-  <div class="project-item">
-    <UiCarouselContainer :images="img"/>
-    <h1>{{ name }}</h1>
-    <div class="project-desc">
-      <p>{{ desc }} </p>
-      <NuxtLink :to="src">Visit</NuxtLink>
-    </div>
+  <div class="project-item" @mouseleave="isHovering = false">
+    <UiCarouselContainer @mousedown="isHovering = true" :active="isHovering" :images="img"/>
+    <Transition>
+      <h1 v-if="!isHovering">{{ name }}</h1>
+    </Transition>
+    <Transition>
+      <div v-if="!isHovering" class="project-desc">
+        <p>{{ desc }} </p>
+        <NuxtLink :to="src">Visit</NuxtLink>
+      </div>
+    </Transition>
   </div>
 </template>
 
@@ -59,5 +63,15 @@
     flex-wrap: wrap;
     padding: 1rem;
     backdrop-filter: brightness(50%);
+  }
+
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.5s ease;
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
   }
 </style>
