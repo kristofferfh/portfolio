@@ -5,6 +5,7 @@
     name: string
     src: string
     desc: string
+    state: boolean
   }
 
   // pass translateX and rotate?
@@ -13,8 +14,12 @@
 <template>
   <span>
     <LazyNuxtImg :src="`projects/${props.src}`"/>
-    <h3>{{ props.name }}</h3>
-    <p>{{ props.desc }}</p>
+    <Transition>
+      <h3 v-if="props.state">{{ props.name }}</h3>
+    </Transition>
+    <Transition>
+      <p v-if="props.state">{{ props.desc }}</p>
+    </Transition>
   </span>
 </template>
 
@@ -35,15 +40,27 @@
 
   h3 {
     position: absolute;
-    padding: 1rem;
-    top: 30%;
-    transform: translateY(-50%);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    left: 2rem;
+    top: 2rem;
+    padding: 2rem 5rem;
+    backdrop-filter: brightness(50%);
   }
 
   p {
     position: absolute;
-    bottom: 0;
-    padding: 1rem;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 2rem 5rem;
+    backdrop-filter: brightness(50%);
+  }
+
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.5s ease;
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
   }
 </style>
