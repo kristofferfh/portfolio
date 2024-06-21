@@ -45,6 +45,8 @@
   img {
     position: absolute;
     width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 
   h3 {
