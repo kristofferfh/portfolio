@@ -49,9 +49,10 @@
 
   p {
     position: absolute;
-    right: 2rem;
-    bottom: 2rem;
+    right: 0;
+    bottom: 0;
     padding: 2rem 5rem;
+    margin: 2rem;
     backdrop-filter: brightness(50%);
   }
 
