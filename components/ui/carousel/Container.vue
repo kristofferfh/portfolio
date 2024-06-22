@@ -29,8 +29,8 @@
     <template v-for="(item, index) in props.images">
       <LazyUiCarouselImage v-bind="item" :state="props.active" :active="index === activePage" />
     </template>
-    <button @click="pageinate(--activePage)">left </button>
-    <button @click="pageinate(++activePage)">{{ activePage }}</button>
+    <button @click="pageinate(--activePage)"></button>
+    <button @click="pageinate(++activePage)"></button>
   </div>
 </template>
 
@@ -48,6 +48,8 @@
     position: absolute;
     width: 20%;
     height: 100%;
+    background: none;
+    border: none;
   }
 
   button:last-of-type {
