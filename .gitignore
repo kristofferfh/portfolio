@@ -27,4 +27,4 @@ logs
 assets/font/*.zip
 
 # Privacy concerns
-assets/img/projects/placeholder.jpg
+assets/img/projects/placeholder*
