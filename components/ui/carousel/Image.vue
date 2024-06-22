@@ -3,17 +3,18 @@
 
   interface Image {
     name: string
-    src: string
+    src?: string
     desc: string
     state: boolean
+    active: boolean
   }
 
   // pass translateX and rotate?
 </script>
 
 <template>
-  <span>
-    <LazyNuxtImg :src="`projects/${props.src}`"/>
+  <span v-if="active">
+    <LazyNuxtImg :src="props.src ? `projects/${props.src}` : 'projects/placeholder.jpg'"/>
     <Transition>
       <h3 v-if="props.state">{{ props.name }}</h3>
     </Transition>
