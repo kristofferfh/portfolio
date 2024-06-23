@@ -47,7 +47,7 @@
     background: red;
     overflow: hidden;
     width: clamp(500px, 100%, 1024px);
-    height: clamp(500px, 75svw, 50svh);
+    height: clamp(500px, 75svw, 33svh);
 
     border-radius: 10px;
     -webkit-backdrop-filter: blur(0);
