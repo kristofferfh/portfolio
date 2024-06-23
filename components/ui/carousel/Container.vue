@@ -26,9 +26,11 @@
 
 <template>
   <div>
-    <template v-for="(item, index) in props.images">
-      <LazyUiCarouselImage v-bind="item" :state="props.active" :active="index === activePage" />
-    </template>
+    <TransitionGroup>
+      <template v-for="(item, index) in props.images">
+        <LazyUiCarouselImage v-bind="item" :state="props.active" :active="index === activePage" />
+      </template>
+    </TransitionGroup>
     <button @click="pageinate(--activePage)"></button>
     <button @click="pageinate(++activePage)"></button>
   </div>
@@ -54,5 +56,15 @@
 
   button:last-of-type {
     right: 0;
+  }
+
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.5s ease-in-out
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
   }
 </style>
