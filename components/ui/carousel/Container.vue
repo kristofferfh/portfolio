@@ -52,10 +52,24 @@
     height: 100%;
     background: none;
     border: none;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+    background: rgb(61,61,61);
+    background: linear-gradient(90deg, rgba(61,61,61,1) 0%, rgba(0,0,0,0) 100%);
+  }
+
+  button:hover {
+    opacity: 1;
   }
 
   button:last-of-type {
     right: 0;
+    background: rgb(61,61,61);
+    background: linear-gradient(270deg, rgba(61,61,61,1) 0%, rgba(0,0,0,0) 100%);
+  }
+
+  button:last-of-type:hover {
+    opacity: 1;
   }
 
   .v-enter-active,
