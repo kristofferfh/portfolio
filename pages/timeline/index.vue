@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div>
+  <section>
     <h1>Hi!</h1>
-  </div>
+  </section>
 </template>
 
 <style scoped>

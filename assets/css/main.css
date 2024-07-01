@@ -15,3 +15,20 @@ body {
   background-color: var(--bg-primary);
   color: var(--txt-primary);
 }
+
+#__nuxt {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100svh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0;
+  }
+}

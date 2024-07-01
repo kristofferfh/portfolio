@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Project 1",
+    "img": [
+      {
+        "name": "Fly the Atlantic?",
+        "src": "placeholder.jpg",
+        "desc": "It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency."
+      },{
+        "name": "Decisions",
+        "desc": "In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field."
+      },{
+        "name": "complex exploration",
+        "src": "placeholder2.jpg",
+        "desc": "We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too."
+      },{
+        "name": "advanced Saturn missile",
+        "src": "placeholder3.jpg",
+        "desc": "There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation many never come again. But why, some say, the moon? Why choose this as our goal? And they may well ask why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?"
+      }
+    ],
+    "desc": "creativity requires you to murder your children this is not a video game, this is a meeting!, so are there any leftovers in the kitchen?, and deploy to production time to open the kimono. Poop form without content style without meaning. Tiger team. Feature creep iâ€™ve been doing some research this morning and we need to better incentivization. creativity requires you to murder your children the horse is out of the barn drop-dead date, nor teams were able to drive adoption and awareness, and red flag land it in region. (let's not try to) boil the ocean (here/there/everywhere) bleeding edge red flag paddle on both sides, for we need to button up our approach.",
+    "src": "http://localhost:3000"
+  },{
+    "name": "Project 2",
+    "img": [
+      {
+        "name": "Image 1 title",
+        "src": "placeholder4.jpg",
+        "desc": "Image describtion of image 1"
+      },{
+        "name": "Image 2 title",
+        "src": "placeholder3.jpg",
+        "desc": "Image describtion of image 2"
+      },{
+        "name": "Image 3 title",
+        "src": "placeholder2.jpg",
+        "desc": "Image describtion of image 3"
+      }
+    ],
+    "desc": "Usabiltiy increase the pipelines vertical integration, nor we have to leverage up the messaging personal development race without a finish line. You gotta smoke test your hypothesis. Fast track timeframe re-inventing the wheel root-and-branch review peel the onion, yet start procrastinating 2 hours get to do work while procrastinating open book pretend to read while manager stands and watches silently nobody is looking quick do your web search manager caught you and you are fured. On this journey closing these latest prospects is like putting socks on an octopus high-level we're ahead of the curve on that one table the discussion.",
+    "src": "http://localhost:3000"
+  },{
+    "name": "Project 3",
+    "img": [
+      {
+        "name": "Image 1 title",
+        "src": "placeholder3.jpg",
+        "desc": "Image describtion of image 1"
+      },{
+        "name": "Image 2 title",
+        "src": "placeholder3.jpg",
+        "desc": "Image describtion of image 2"
+      },{
+        "name": "Image 3 title",
+        "src": "placeholder.jpg",
+        "desc": "Image describtion of image 3"
+      }
+    ],
+    "desc": "Usabiltiy increase the pipelines vertical integration, nor we have to leverage up the messaging personal development race without a finish line. You gotta smoke test your hypothesis. Fast track timeframe re-inventing the wheel root-and-branch review peel the onion, yet start procrastinating 2 hours get to do work while procrastinating open book pretend to read while manager stands and watches silently nobody is looking quick do your web search manager caught you and you are fured. On this journey closing these latest prospects is like putting socks on an octopus high-level we're ahead of the curve on that one table the discussion.",
+    "src": "http://localhost:3000"
+  }
+]

@@ -2,7 +2,7 @@
   // Convert css transition to func instead or use media queuery to find size of
   // nav el to scale border-radius better.
 
-  const isOpen = ref(true)
+  const isOpen = ref(false)
 </script>
 
 <template>

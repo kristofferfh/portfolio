@@ -33,7 +33,7 @@
 </script>
 
 <template>
-  <div id="hero">
+  <section id="hero">
     <div class="message">
       <span style="font-size: 10rem; color: lightskyblue; justify-self: end;">
         Hi!
@@ -53,8 +53,8 @@
         </TransitionGroup>
       </span>
     </div>
-  </div>
-  <Particles />
+    <Particles />
+  </section>
 </template>
 
 <style scoped>
@@ -62,8 +62,6 @@
     display: grid;
     place-items: center;
     height: 100svh;
-
-    backdrop-filter: blur(50px) brightness(40%);
   }
 
   .message {
