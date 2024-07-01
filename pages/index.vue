@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  definePageMeta({ layout: 'hero' })
   const message = ref<string[]>([])
   const count = ref(0)
 
