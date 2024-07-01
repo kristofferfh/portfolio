@@ -6,19 +6,20 @@
 
   onMounted(() => {
     Object.assign(projectsList.value, PROJECTS)
-
-    console.log(projectsList.value)
   })
 </script>
 
 <template>
   <section>
-    <template v-for="project in projectsList">
-      <LazyProjectsCard v-bind="project"/>
-    </template>
+    <UiCardsProject v-for="project in projectsList" v-bind="project" />
   </section>
 </template>
 
 <style scoped>
-
+  section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+  }
 </style>
