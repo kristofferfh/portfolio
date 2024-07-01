@@ -27,7 +27,7 @@
 <template>
   <div>
     <TransitionGroup>
-      <template v-for="(item, index) in props.images">
+      <template v-for="(item, index) in props.images" :key="index">
         <LazyUiCarouselImage v-bind="item" :state="props.active" :active="index === activePage" />
       </template>
     </TransitionGroup>
