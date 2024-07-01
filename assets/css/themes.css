@@ -5,8 +5,10 @@
   --color-bg-light-200: #ececec;
 
   --color-txt-dark: #1d1d1d;
+  --color-txt-darklight: #3d3d3d;
   --color-txt-light: #fff;
   --color-txt-greylight: #d1d1d1;
+  --color-txt-lightdark: #d3d3d3;
 
   --gradient-dark-blue: linear-gradient(90deg, hsla(0, 0%, 11%, 1) 0%, hsla(232, 32%, 23%, 1) 100%);
 }
@@ -15,6 +17,7 @@
   --bg-primary: var(--color-bg-light-100);
   --bg-secondary: var(--color-bg-light-200);
   --txt-primary: var(--color-txt-dark);
+  --txt-secondary: var(--color-txt-darklight);
   --txt-header: var(--color-txt-dark);
   --bg-grad: var(--gradient-dark-blue);
 }
@@ -24,6 +27,7 @@
     --bg-primary: var(--color-bg-dark-100);
     --bg-secondary: var(--color-bg-dark-200);
     --txt-primary: var(--color-txt-light);
+    --txt-secondary: var(--color-txt-lightdark);
     --txt-header: var(--color-txt-greylight);
   }
 }
