@@ -11,7 +11,7 @@
           <NuxtLink to="/">Home</NuxtLink>
           <NuxtLink to="/timeline">Timeline</NuxtLink>
           <NuxtLink to="/projects">Projects</NuxtLink>
-          <NuxtLink to="/about">About</NuxtLink>
+          <!-- <NuxtLink to="/about">About</NuxtLink> -->
           <NuxtLink to="/contact">Contact</NuxtLink>
         </span>
       </div>
@@ -41,6 +41,18 @@
 
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
     background-color: var(--bg-secondary);
+  }
+
+  @media only screen and (max-width: 600px) {
+    footer {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 2rem;
+    }
+
+    footer > div:first-child {
+      display: none;
+    }
   }
 
   footer > div {
